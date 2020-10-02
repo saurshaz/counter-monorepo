@@ -1,0 +1,26 @@
+{
+  "name": "nextjs",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "test": "yarn run build"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "~16.13.1",
+    "tailwindcss": "latest",
+    "react-dom": "~16.13.1",
+    "react-redux": "^7.2.1",
+		"redux": "^4.0.5",
+    "mono-app-common": "1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "~14.0.23",
+    "@types/react": "~16.9.43",
+    "@types/react-dom": "~16.9.8",
+    "next-transpile-modules": "latest",
+    "typescript": "~3.9.6"
+  }
+}

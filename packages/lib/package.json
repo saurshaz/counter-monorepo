@@ -1,0 +1,9 @@
+{
+  "name": "mono-app-common",
+  "version": "1.0.0",
+  "main": "redux/index.js",
+  "license": "ISC",
+  "dependencies": {
+    "redux": "^4.0.5"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "counter-monorepo",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  },
+  "dependencies": {
+    "metro-config": "^0.56.0"
+  },
+  "scripts": {
+    "android": "lerna --scope=ExpoApp run android --stream --",
+    "ios": "lerna --scope=ExpoApp run ios --stream --",
+    "nextjs": "lerna --scope=nextjs run ios --stream --",
+    "web": "lerna --scope=web-app run start --stream --",
+    "expo": "lerna --scope=ExpoApp run start --stream --",
+    "postinstall": "cd ./packages/ExpoApp && expo-yarn-workspaces postinstall"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": ["**/react-native", "**/react-native/**", "**/expo", "**/expo/**"]
+  }
+}
